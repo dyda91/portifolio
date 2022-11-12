@@ -22,3 +22,24 @@ navItem.forEach(item => {
         }
     })
 })
+
+/*Anima itens da tela*/
+
+const itemsAnimate = document.querySelectorAll('[data-animate]')
+
+const animeteScroll = () => {
+    const windowTop = window.pageYOffset + window.innerHeight * 0.85
+    itemsAnimate.forEach(Element => {
+        if (windowTop > Element.offsetTop){
+            Element.classList.add('animate')
+        } else {
+            Element.classList.remove('animate')
+        }
+    })
+}
+
+animeteScroll()
+
+window.addEventListener('scroll', () => {
+    animeteScroll();
+})
