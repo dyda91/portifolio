@@ -43,3 +43,19 @@ animeteScroll()
 window.addEventListener('scroll', () => {
     animeteScroll();
 })
+
+/*Ativa botão 'Enviando...' */
+
+const btnSend = document.querySelector('#btn-send')
+const btnSending = document.querySelector('#btn-sending')
+
+btnSend.addEventListener('click', () => {
+    btnSending.style.display = 'block'
+    btnSend.style.display = 'none'
+})
+
+/*Tira mensagem de email enviado depois de 5 segundos*/
+
+setTimeout(() => {
+    document.querySelector('#alerta').style.display = 'none';
+}, 5000)
