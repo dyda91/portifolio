@@ -1,5 +1,5 @@
 <h1>PORTIFOLIO RESPONSIVO</h1>
-<p>Portifólio responsivo desenvolvido em Python com Flask, bootstrap e javascripy </p>
+<p>Portifólio responsivo desenvolvido em Python com Flask, bootstrap e javascript </p>
   <p>  • Totalmente responsivel </p>
   <p>  • Com sistema de envio de mensagem atravéz de email </p>
   
