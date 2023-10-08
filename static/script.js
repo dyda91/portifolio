@@ -28,7 +28,7 @@ navItem.forEach(item => {
 const itemsAnimate = document.querySelectorAll('[data-animate]')
 
 const animeteScroll = () => {
-    const windowTop = window.pageYOffset + window.innerHeight * 0.85
+    const windowTop = window.scrollY + window.innerHeight * 0.85
     itemsAnimate.forEach(Element => {
         if (windowTop > Element.offsetTop){
             Element.classList.add('animate')
